@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "webpack": "2",
+    "webpack-dev-server": "2"
+  }
+}
