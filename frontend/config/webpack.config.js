@@ -8,7 +8,7 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, '../dist/assets'),
-    publicPath: '/assets/',                          // New
+    publicPath: '/assets/', 
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
@@ -18,7 +18,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: path.resolve(__dirname, '../src'),  // New
+    contentBase: path.resolve(__dirname, '../src'),
   },
   module: {
     rules: [
