@@ -8,7 +8,7 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, '../dist/assets'),
-    publicPath: '/assets/', 
+    publicPath: '/assets/',
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
@@ -27,7 +27,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['es2015']
+            presets: ['es2015', 'react', 'stage-0']
           },
         },
         exclude: [
