@@ -1,4 +1,2 @@
-import moment from 'moment'
-
-var rightNow = moment().format('MMMM Do YYYY, h:mm:ss a')
-console.log(rightNow)
+let d = new Date()
+console.log(d.getTime())
