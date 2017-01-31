@@ -33,7 +33,25 @@ module.exports = {
         exclude: [
           path.resolve(__dirname, "../node_modules")
         ]
-      }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true
+            }
+          },
+        ],
+      },
     ],
-  }
+  },
+  resolve: {
+    modules: [
+      path.resolve(__dirname, '../src'),
+      path.resolve(__dirname, '../node_modules')
+    ]
+  },
 }
