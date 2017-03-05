@@ -3,7 +3,7 @@ const webpack = require('webpack')
 module.exports = {
   context: path.resolve(__dirname, '../src'),
   entry: {
-    app: './app.js',
+    app: ['react-hot-loader/patch', './app.js'],
   },
   output: {
     filename: '[name].bundle.js',
@@ -27,7 +27,8 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['es2015', 'react', 'stage-0']
+            presets: [['es2015', { modules: false }], 'react', 'stage-0'],
+            plugins: ['react-hot-loader/babel'],
           },
         },
         exclude: [

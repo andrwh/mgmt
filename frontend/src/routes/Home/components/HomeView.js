@@ -4,7 +4,7 @@ import styles from './styles.css'
 
 export const HomeView = () => (
   <div className=''>
-    <h1 className='mt2'>Home</h1>
+    <h1 className='mt2'>Hodsame</h1>
   </div>
 )
 
