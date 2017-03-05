@@ -1,0 +1,4 @@
+.red {
+  composes: red from './colors.css';
+  font-size: 5rem;
+}
